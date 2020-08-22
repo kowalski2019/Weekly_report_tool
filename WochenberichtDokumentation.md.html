@@ -1,0 +1,64 @@
+<meta charset="utf-8" lang="de">
+<script>window.markdeepOptions = { "tocStyle" : "auto" }</script>
+
+<center> **Wochenberichtstool Benutzeranleitung** </center>
+
+# Einführung
+
+Das Wochenberichtstool wurde in Sommer 2020 in Rahmen des SWTP-Projekts entwickelt, damit Zeiterfassungen pro Studenten effizient aufgeteilt werden.
+Das Tool liest eine bestimmte CSV-Datei ein und ordnet die Stunden,Vorgänge und Komponente jeder Person jeweils in ihr Blatt zu.
+Es wurde mit der Skriptsprache VBA (Visual Basic Application) entwickelt.
+
+# Portabilität des Tools
+
+    ## Linux-Umgebung
+     Das Tool hat auf diesem System die besten Leistungen mit LibreOffice, weil es auf
+     einem Linux-Rechner mit hilfe des Software " **LibreOffice** "" bis zum Fuß programmiert worden.  
+
+    ## Windows & Mac OS-Umgebung
+    Die funktionalität des Tools hier gestört, weil diese Betriebssysteme " **Microsoft Office** " verwendet.
+    Das Software unterstützt zwar VBA
+    Der QuelleCode kann uebertragen werden.
+    muss aber das Frontend angepasst werden un jeweils eine Taste an ihre entsprechende Function verbunden werden.
+
+    * Anmerkungen: Die Mac OS Rechner können im Prinzip das Tool problemlos ausführen, weil das System zu Unix-Betriebssysteme
+                   gehört. Dafür wird das Software " **LibreOffice** " verwendet. 
+
+
+# Die lesbaren Dateien
+    Nur CSV-Dateien aus der Jira-Webanwendung sind zugelassen.
+
+# Jira
+    ## Was ist Jira ?
+    ## Wie wird die richtige CSV-Datei aus Jira exportiert?
+    ## Das Aussehen der Datei
+
+# Wie wird ein neues Projekt mit dem Tool erstellt?
+    Dies wird automatisch bei dem ersten Import der CSV-Datei gemacht.
+
+# Wichtig über das Tool zu wissen
+    - Die Blätter " **Team** ", " **home** " und " **Summary** " dürfen nicht gelöscht werden.
+    - Es darf keine weitere Sheets(Blätters) erstellt werden außer die, die vom Tool erstellt worden.
+
+# Software-Funktionen
+
+ - Die Datein werden Wochentlich importiert.
+ - Das Tool merkt sich die Eröffnung der CSV-Datein bzw: ob es ein ertes Import.</br>
+    dadurch weißt es, ob es ein neues Projekt ist oder nicht. 
+ - Die Personen Sheets( Blätters) werden automatisch erstellt.
+ - Es Prüft immer bei einem Import die Namen der Personen, die aktuel an das projekt teilnehmen und wenn eine neue Person in der CSV datei ist (heißt eine neue Person tretet das Projekt bei), fügt dann das Tool automatish die neue Person hinzu.
+ - Die letzte importierte Woche kann gelöscht werden.
+ - eine Person oder mehere Personen können gelöscht werden,</br>seine(ihre) gearbeite Stunden bleiben Trotzdem im Projekt fest.
+ - Das ganze Projekt kann gelöscht werden, indem man auf die Taste " **REFRESH** " drückt.
+
+ # Tipps & Infos
+ 
+    - Wenn Sie sich der QuelleCode ansehen möchte, kann das VBA-IDE(Integrierte Entwicklungsumgebung) mit dieser Taste-Kombination
+     " **Alt + F11** " aufgemacht werden.
+
+    - Das Wochenberichtstool kann unter diesem Link [Wochenberichtstool](https://github.com/kowalski2019/Weekly_report_tool) runtergeladen werden.
+
+
+<!-- Markdeep: -->
+<style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js">   
+</script><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
